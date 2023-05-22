@@ -7,6 +7,19 @@
 }
 @media screen and (min-width:768px){
 
+    /* nav */
+    .hamburger-icon__wrapper{
+        display: none;
+    }
+    .desktop-nav-list{
+        flex-direction: row;
+        position: static;
+    }
+    .desktop-nav-list .nav-list__item{
+        margin-right: 3rem;
+        margin-top:0;
+    }
+
 }
 @media screen and (min-width:992px){
 

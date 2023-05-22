@@ -5,7 +5,85 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: 'poppins regular';
-    font-size: 1.6rem;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
+/* nav */
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -15rem;
+    top: 5rem;
+    transition: all .3s ease-in-out;
+    bottom: 0;
+}
+.nav-list--open{
+    left: 0;
+    padding: 2rem 3rem 0 3rem;
+
+}
+.nav-list__item{
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.nav-list__item:last-child{
+    margin-right: 0;
+}
+
+.nav-link{
+    background-color: #060000;    
+    color: #fff;
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+}
+
+/* --------------------------------------------------hamburger menu Icon */
+.hamburger-icon__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+.hamburger-icon{
+    display: block;
+    position: relative;
+}
+.hamburger-icon,.hamburger-icon::after,
+.hamburger-icon::before {
+    content: "";
+    width: 4rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #060000;
+    transition: all 250ms;
+}
+.hamburger-icon::before{
+    position: absolute;
+    bottom: 1rem;
+}
+.hamburger-icon::after{
+    position: absolute;
+    top: 1rem;
+}
+/* close hamburger */
+.hamburger-icon__wrapper--open .hamburger-icon::before{
+    transform: translateY(1rem) rotate(45deg);
+}
+.hamburger-icon__wrapper--open .hamburger-icon::after{
+    transform: translateY(-1rem) rotate(-45deg);
+}
+.hamburger-icon__wrapper--open .hamburger-icon{
+    background-color: #fff;
+}
+/* --------------------------------------------------------------------- */
