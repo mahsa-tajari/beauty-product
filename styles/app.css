@@ -39,7 +39,7 @@ body{
     margin-right: 0;
 }
 
-.nav-link{
+.general-link{
     background-color: #060000;    
     color: #fff;
     border-radius: 2rem;
@@ -87,3 +87,37 @@ body{
     background-color: #fff;
 }
 /* --------------------------------------------------------------------- */
+/* ------------------------header */
+.header{
+    padding-right: -25px;
+    padding-left: -25px;
+    background-color: #A6D5DF;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 2rem 2rem;
+    border-radius: .4rem;
+    margin-top: 3rem;
+}
+.header__body{
+
+}
+.header__title{
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.header__desc{
+    margin-bottom: 3rem;
+}
+.header__link{
+
+}
+.header__cover-wrapper{
+
+}
+.header__cover{
+
+}
