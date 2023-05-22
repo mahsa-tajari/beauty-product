@@ -1,0 +1,11 @@
+@import url(reset.css);
+@import url(grid.css);
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'poppins regular';
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
