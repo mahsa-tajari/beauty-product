@@ -3,7 +3,9 @@
   
 }
 @media screen and (min-width:576px){
-   
+    .header__cover {
+        width: 45rem;
+    }
 }
 @media screen and (min-width:768px){
 
@@ -11,18 +13,25 @@
     .hamburger-icon__wrapper{
         display: none;
     }
-
+    .nav__wrapper{
+        padding: 1rem 0;
+    }
     .desktop-nav-list{
         flex-direction: row;
         position: static;
     }
 
     .desktop-nav-list .nav-list__item{
-        margin-right: 3rem;
+        margin-right: 1rem;
         margin-top:0;
+        font-size: 1.6rem;
+    }
+    .nav-list__item:hover{
+        background-color: #060000;
+        color: #fff;
     }
     /* header */
-    .header{
+    .general-style{
         padding-right: 0;
         padding-left: 0;
     }
@@ -31,32 +40,79 @@
         flex-direction: row;
         flex-wrap: nowrap;
     }
-
+    .header__body{
+        display: flex;
+        flex-direction: column;
+        text-align: unset;
+        align-items: unset;
+    }
     .header__title{
-        font-size: 7rem;
+        font-size: 4.2rem;
         margin: 0;
     }
     .header__desc{
         max-width: 45rem;
-        margin-bottom: 3rem;
-    }
-    .header__cover-wrapper{
-        width: 60rem;
+        margin: 3rem 0 5rem 0;
+        font-size: 1.4rem;
     }
 
     .header__cover{
-        width: 100%;
+        width: 40rem;
     }
 
+    /* products */
+
+    .products__boxes-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product__box{
+        margin-right: 3rem;
+        margin-top: 0;
+    }
+    .box__img{
+        width: 32rem;
+        height: 32rem;
+    }
+    
 }
 @media screen and (min-width:992px){
-
+    .desktop-nav-list .nav-list__item{
+        margin-right: 3rem;
+    }
+    .header__title{
+        font-size: 5.8rem;
+    }
+    .box__img{
+        width: 28rem;
+        height: 28rem;
+    }
 }
 @media screen and (min-width:1200px){
-  
+    .header__title{
+        font-size: 6.2rem;
+    }
+    .header__cover{
+        width: 45rem;
+    }
+    .box__img{
+        width: 33rem;
+        height: 33rem;
+    }
 }
 @media screen and (min-width:1400px){
-
+    .header__title{
+        font-size: 7rem;
+    }
+    .header__cover{
+        width: 50rem;
+    }
+    .box__img{
+        width: 35rem;
+        height: 35rem;
+    }
 }
 
 
