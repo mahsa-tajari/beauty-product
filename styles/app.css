@@ -184,6 +184,7 @@ body{
     max-width: 37rem;
     padding: 1rem 2rem;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .item__desc {
@@ -197,4 +198,25 @@ body{
     border-radius: 100%;
     width: 5rem;
     height: 5rem;
+    /* position: relative; */
 }
+/* .item__icon::after,
+.item__icon::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+} */
+/* .item__icon::after{
+    width: 0.5rem;
+    height: 3rem;
+    top: 1rem;
+    left: 2.5rem;
+    transform: rotate(45deg);
+}
+.item__icon::before{
+    width: 0.5rem;
+    height: 1.5rem;
+    transform: rotate(135deg);
+    top: 2rem;
+    left: 1rem;
+} */
