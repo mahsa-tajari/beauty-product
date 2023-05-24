@@ -135,25 +135,26 @@ body{
 /* producrs */
 .products{
     margin-top: 5rem;
+    padding: 5rem 0;
 }
 
 .general-title{
     font-size: 3.2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 7rem;
 
 }
 .products__boxes-wrapper{
+    margin-top: 5rem;
+}
+
+.product__box{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
+    justify-content: center;
 }
-.product__box{
-    margin-top: 5rem;
-}
-.box__title{
+
+.general-box-title{
     text-align: center;
     margin-top: 1rem;
     font-weight: 700;
@@ -166,57 +167,82 @@ body{
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-.deals__title{
-
+.deals__wrapper{
+    margin-top: 5rem;
 }
+
 .deals__items-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
 }
+
 .deals__item {
     display: flex;
     align-items: center;
-    border-radius: 5rem;
     background-color: #202A36;
-    color: #fff;
-    max-width: 37rem;
-    padding: 1rem 2rem;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    padding: 1.5rem 3.5rem 1.5rem 2.5rem;
+    border-radius: 5rem;
+}
+.item__desc-wrapper{
+    max-width: 22rem;
+    line-height: 3rem;
 }
 
 .item__desc {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-left: 2rem;
+    color: #fff;
 }
 
 .item__icon{
-    background-color: #A8A8A8;
-    border-radius: 100%;
-    width: 5rem;
-    height: 5rem;
-    /* position: relative; */
+   background-color: #A8A8A8;
+   border-radius: 61%;
+   width: 5rem;
+   height: 5rem;
+   position: relative;
 }
-/* .item__icon::after,
+.item__icon::after,
 .item__icon::before{
     content: "";
     position: absolute;
     background-color: #fff;
-} */
-/* .item__icon::after{
+}
+.item__icon::after{
     width: 0.5rem;
     height: 3rem;
     top: 1rem;
-    left: 2.5rem;
+    left: 2.7rem;
     transform: rotate(45deg);
 }
 .item__icon::before{
     width: 0.5rem;
     height: 1.5rem;
     transform: rotate(135deg);
-    top: 2rem;
-    left: 1rem;
-} */
+    top: 2.1rem;
+    left: 1.2rem;
+}
+/* ---------------------------------------------best sellers section */
+.sellers{
+    padding-top: 5rem;
+    padding: 5rem 0;
+}
+.sellers__images-wrapper{
+    margin-top: 5rem;
+}
+.sellers__img-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.seller__image{
+    border-radius: 100%;
+    box-shadow: rgba(0,0,0,.25) 0 4px 4px;
+    margin-bottom: 3rem;
+}
+.sellers__img{
+    height: 100%;
+}
